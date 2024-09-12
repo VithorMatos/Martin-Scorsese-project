@@ -1,0 +1,54 @@
+@use 'hero';
+@use 'shows';
+@use 'awards';
+@use 'faq';
+@use 'footer';
+@use 'variaveis';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: variaveis.$corTextoPrincipal;
+    list-style: none;
+}
+
+body{
+    background-color:  variaveis.$corDeFundo;
+}
+
+@mixin fontTitle(){
+    font-family: "Bebas Neue", sans-serif;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin fontText(){
+    font-family: "Playfair Display", serif;
+    color: variaveis.$corTextoSecudario;
+}
+
+p, li, strong{
+    @include fontText();
+}
+
+h1{
+    @include fontTitle();
+    font-size: 184px;
+    line-height: 200px;
+    
+
+}
+
+h2{
+    @include fontTitle();
+    font-size: 80px
+}
+
+h4{
+    @include fontTitle();
+    font-weight: normal
+}
+
+button{
+    @include fontTitle();
+}
