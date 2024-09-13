@@ -4,6 +4,19 @@
     background-image: url('/dist/images/Absolute.jpg');
     text-align: center;
     background-size: cover;
+
+    @media (max-width: 768px) {
+            height: 10px;
+            min-height: 200px;
+    }
+
+    h1{
+
+        @media (max-width: 768px) {
+            font-size: 48px;
+        }
+    
+    }
     
 
     &__content{

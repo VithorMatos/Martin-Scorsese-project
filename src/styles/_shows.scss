@@ -5,14 +5,24 @@
     h2{
         text-align: center;
         margin-top: 50px;
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+    
     }
 
     &__list{
         margin-top: 46px;
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
-        list-style: none;
         gap: 30px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    
 
         &--is-active {
             display: grid;
@@ -24,6 +34,11 @@
                 width: 600px;
                 max-width: 100%;
                 border-radius: 30px;
+
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
+            
             }
         }
     }
@@ -42,6 +57,12 @@
             text-transform: uppercase;
             cursor: pointer;
             border-bottom: 5px solid transparent;
+
+            @media (max-width: 768px) {
+                font-size: 30px;
+                margin-top: 20px;
+                padding-bottom: 0px;
+            }
 
             &:hover{
                 color: #6F7D8C;

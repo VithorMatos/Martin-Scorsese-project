@@ -1,40 +1,52 @@
 .awards {
     padding: 5.6vw;
 
-    h2{
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+
+    h2 {
         text-align: center;
     }
 
-    &__list{
+    &__list {
         display: flex;
         justify-content: space-around;
         margin-top: 50px;
         background-color: lighten(#1A1817, 1%);
         border-radius: 30px;
+        padding: 20px;
 
-        &__item{
+        @media (max-width: 768px) {
+            display: block;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        &__item {
             text-align: center;
-            padding: 60px 44px 44px;
+            padding: 40px 20px;
             width: 100%;
-
-            img{
-                height: 600px;
+            
+            img {
+                height: auto;
+                width: 60vw;
+                max-width: 300px;
                 border: 5px solid darken(#1A1817, 1%);
                 box-shadow: 1px 1px 1px darken(#1A1817, 1%);
+
+                @media (max-width: 768px) {
+                    width: 60vw;
+                    max-width: 280px;
+                }
             }
 
             strong {
                 display: block;
-                margin-top: 24px;
-                margin-bottom: 24px;
-                font-size: 24px;
-            }
-
-            li{
-                margin-bottom: 10px;
-                font-size: 19px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                font-size: 22px;
             }
         }
     }
-
 }

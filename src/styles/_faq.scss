@@ -18,11 +18,12 @@
 
             &__question{
                 color: #fff;
-                font-size: 20px;
+                font-size: 32px;
                 padding: 24px;
                 display: block;
                 cursor: pointer;
                 position: relative;
+                font-family: "Bebas Neue", sans-serif;
 
                 &::after {
                     content: '+';
@@ -42,9 +43,8 @@
                 padding: 0 24px;
                 transition: heigth, .5s ease;
 
-                u{
-                    font-weight: bold;
-                    cursor: pointer;
+                p{
+                    font-size: 20px;
                 }
             }
 

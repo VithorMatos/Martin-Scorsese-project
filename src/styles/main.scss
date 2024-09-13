@@ -4,6 +4,8 @@
 @use 'faq';
 @use 'footer';
 @use 'variaveis';
+@use 'header';
+
 
 *{
     margin: 0;
@@ -38,6 +40,8 @@ h1{
     
 
 }
+
+
 
 h2{
     @include fontTitle();
