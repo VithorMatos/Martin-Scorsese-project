@@ -17,6 +17,10 @@
         border-radius: 30px;
         padding: 20px;
 
+        @media (max-width: 1023px) {
+            display: block;
+        }
+
         @media (max-width: 768px) {
             display: block;
             padding: 0;
@@ -31,9 +35,13 @@
             img {
                 height: auto;
                 width: 60vw;
-                max-width: 300px;
+                max-width:  400px;
                 border: 5px solid darken(#1A1817, 1%);
                 box-shadow: 1px 1px 1px darken(#1A1817, 1%);
+
+                @media (max-width: 1023px) {
+                    max-width: 55vw;
+                }
 
                 @media (max-width: 768px) {
                     width: 60vw;
@@ -46,6 +54,17 @@
                 margin-top: 16px;
                 margin-bottom: 16px;
                 font-size: 22px;
+
+                @media (max-width: 1023px) {
+                    font-size: 26px;
+                }
+            }
+
+            ul {
+
+                @media (max-width: 1023px) {
+                    font-size: 19px;
+                }
             }
         }
     }

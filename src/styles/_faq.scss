@@ -1,6 +1,10 @@
 .faq {
     padding: 5.6vw;
 
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
     h2 {
         text-align: center;
         margin-bottom: 24px;
@@ -18,13 +22,17 @@
 
             &__question{
                 color: #fff;
-                font-size: 32px;
+                font-size: 24px;
                 padding: 24px;
                 display: block;
                 cursor: pointer;
                 position: relative;
                 font-family: "Bebas Neue", sans-serif;
-
+                
+                @media (max-width: 768px) {
+                    padding-right: 55px;
+                }
+            
                 &::after {
                     content: '+';
                     position: absolute;
@@ -41,10 +49,21 @@
                 height: 0;
                 overflow: hidden;
                 padding: 0 24px;
-                transition: heigth, .5s ease;
+                transition: height, .5s ease;
+
+                @media (max-width: 768px) {
+                    padding: 0;
+                }
 
                 p{
                     font-size: 20px;
+
+                    @media (max-width: 768px) {
+                        padding: 0 20px;
+                        font-size: 16px;
+                        width: 100%;
+                        text-align: justify;
+                    }
                 }
             }
 
@@ -52,12 +71,13 @@
 
                 .faq__questions__item__question::after {
                     content: '-';
+
                 }
 
                 .faq__questions__item__answer{
                 height: auto;
                 padding-bottom: 24px;
-                transition: heigth, .5s ease;
+                transition: height, .5s ease;
                 }
             }
         }
